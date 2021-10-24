@@ -1,8 +1,10 @@
-import java.util.*;
+package service;
 
-public class Main {
+import java.util.ArrayDeque;
+import java.util.Deque;
 
-    static boolean isBalanced(String expr) {
+public class IsBalanced {
+    public boolean isBalanced(String expr) {
         Deque<Character> stack = new ArrayDeque<Character>();
 
         for (int i = 0; i < expr.length(); i++) {
@@ -38,15 +40,5 @@ public class Main {
         }
 
         return (stack.isEmpty());
-    }
-
-    public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        String expr = scn.next();
-
-        if (isBalanced(expr))
-            System.out.println("The entered String has Balanced Brackets");
-        else
-            System.out.println("The entered Strings do not contain Balanced Brackets");
     }
 }
