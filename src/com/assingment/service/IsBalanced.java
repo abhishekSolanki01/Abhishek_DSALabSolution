@@ -1,4 +1,4 @@
-package service;
+package com.assingment.service;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

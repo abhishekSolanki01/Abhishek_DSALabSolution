@@ -1,7 +1,7 @@
-package driver;
+package com.assingment.driver;
 import java.util.*;
 
-import service.IsBalanced;
+import com.assingment.service.IsBalanced;
 
 public class Driver {
 
